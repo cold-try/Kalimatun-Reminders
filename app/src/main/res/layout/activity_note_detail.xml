@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoteDetailActivity"
+    android:id="@+id/relatMaster">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@color/white"
+        android:background="@color/mn_body"/>
+
+    <TextView
+        android:id="@+id/letter_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@+id/toolbar"
+        tools:text="ك"
+        android:background="@color/mn_body"/>
+
+    <EditText
+        android:id="@+id/arab_word"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/letter_title"
+        android:hint="Kalimah"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/french_definition"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@id/arab_word"
+        android:layout_toEndOf="@id/arab_word"
+        android:layout_below="@id/letter_title"
+        android:hint="Traduction"
+        android:textSize="25sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_arabic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arab_word"
+        tools:listitem="@layout/arab_item" />
+
+
+
+</RelativeLayout>

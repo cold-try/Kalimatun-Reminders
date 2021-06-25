@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Kalimatun</string>
+    <string name="arabic_option">عربية</string>
+    <string name="french_option">Français</string>
+    <string name="footer">Powered by Muslim Network</string>
+
+
+    <string name="arabic_title">Arabic mode</string>
+</resources>
